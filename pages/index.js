@@ -1,9 +1,6 @@
+import IndexLogic from "../src/component/unit/index/IndexContainer"
 
 
 export default function Home() {
-  return (
-    <>
-    
-    </>
-  );
+  return <IndexLogic></IndexLogic>
 }
