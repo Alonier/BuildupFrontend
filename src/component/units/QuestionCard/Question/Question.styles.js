@@ -1,8 +1,7 @@
-import styled from "@emotion/styled"; // Emotion을 사용하여 스타일링
+import styled from "@emotion/styled";
 
-// 질문 텍스트 스타일
-export const QuestionText = styled.div`
-  margin: 20px 0; // 텍스트 위아래 마진
-  font-size: 18px; // 폰트 크기
-  font-weight: bold; // 폰트 굵기
+export const QuestionText = styled.h2`
+  font-size: 1.5rem; // 텍스트 크기
+  margin-bottom: 20px; // 아래 여백
+  color: #000; // 텍스트 색상 (검정색)
 `;

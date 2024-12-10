@@ -1,24 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import { ProgressBarContainer, ProgressBarFill } from "./ProgressBar.styles";
 
-const ProgressWrapper = styled.div`
-  width: 100%;
-  background-color: #f0f0f0;
-  height: 10px;
-  margin: 20px 0;
-`;
-
-const Progress = styled.div`
-  width: ${(props) => props.progress}%;
-  background-color: yellow;
-  height: 100%;
-`;
-
-const ProgressBarPresenter = ({ progress }) => {
+const ProgressBarPresenter = ({ progressPercentage }) => {
   return (
-    <ProgressWrapper>
-      <Progress progress={progress} />
-    </ProgressWrapper>
+    <ProgressBarContainer>
+      <ProgressBarFill style={{ width: `${progressPercentage}%` }} />{" "}
+      {/* 진행률 반영 */}
+    </ProgressBarContainer>
   );
 };
 

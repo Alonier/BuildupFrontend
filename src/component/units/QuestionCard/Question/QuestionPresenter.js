@@ -1,13 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import { QuestionText } from "./Question.styles";
 
-const QuestionText = styled.div`
-  font-size: 18px;
-  margin-bottom: 20px;
-`;
-
-const QuestionPresenter = ({ text }) => {
-  return <QuestionText>{text}</QuestionText>;
+const QuestionPresenter = ({ content }) => {
+  return <QuestionText>{content}</QuestionText>; // 문제 텍스트 렌더링
 };
 
 export default QuestionPresenter;

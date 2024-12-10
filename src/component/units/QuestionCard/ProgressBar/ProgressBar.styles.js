@@ -1,14 +1,15 @@
-import styled from "@emotion/styled"; // Emotion을 사용하여 스타일링
+import styled from "@emotion/styled";
 
-// 진행 바 전체 컨테이너 스타일
 export const ProgressBarContainer = styled.div`
-  width: 100%; // 진행 바 너비
-  height: 20px; // 진행 바 높이
-  border: 1px solid black; // 테두리 스타일
-  background-color: lightgray; // 진행 바 배경색
+  width: 100%; // 전체 너비
+  height: 10px; // 높이
+  background-color: #ccc; // 배경색 (회색)
+  border-radius: 5px; // 모서리 둥글게
+  overflow: hidden; // 내부 요소 넘치지 않도록
+`;
 
-  & > div {
-    height: 100%; // 내부 채워진 바의 높이
-    background-color: black; // 채워진 바 색상
-  }
+export const ProgressBarFill = styled.div`
+  height: 100%; // 컨테이너 높이
+  background-color: #000; // 진행 바 색상 (검정색)
+  transition: width 0.3s ease; // 부드러운 너비 변경 애니메이션
 `;
